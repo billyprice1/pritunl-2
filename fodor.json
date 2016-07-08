@@ -3,7 +3,7 @@
 	"installpath": "/tmp/pritunl/",
 	"provisioner": "fodor/provisioner",
 	"text": {
-		"complete": "Woo!"
+		"complete": "Default username and password: pritunl/pritunl"
 	},
         "links": [
                 {
@@ -21,19 +21,5 @@
 	"distro": "ubuntu-14-04-x64",
 	"description": "Enterprise VPN server https://pritunl.com/",
 	"keywords": ["fodor", "vpn", "enterprise", "server", "pritunl"],
-	"homepage": "https://pritunl.com",
-	"inputs": [
-    {
-        "title": "Admin Username",
-        "name": "admin_username",
-        "placeholder": "admin",
-        "type": "string"
-    },
-    {
-        "title": "Admin Password",
-        "name": "admin_password",
-        "placeholder": "",
-        "type": "password"
-    }
-  ]
+	"homepage": "https://pritunl.com"
 }
