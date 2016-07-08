@@ -1,7 +1,7 @@
 {
 	"name": "fodorxyz/pritunl",
 	"installpath": "/tmp/pritunl/",
-	"provisioner": "fodor/provisioner",
+	"provisioner": "provisioner.sh",
 	"text": {
 		"complete": "Default username and password: pritunl/pritunl"
 	},
