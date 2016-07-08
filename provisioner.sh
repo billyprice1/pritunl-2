@@ -7,3 +7,8 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A
 apt-get -y update
 apt-get -y install pritunl mongodb-org
 service pritunl start
+
+
+SETUP_KEY=`pritunl setup-key`
+
+curl -k -H 'Content-Type: application/json' -X PUT -d "{\"setup_key\":\"${SETUP_KEY}\", \"mongodb_uri\":\"mongodb://localhost:27017/pritunl\"}" "https://${DOMAIN}/setup/mongodb"
