@@ -12,10 +12,8 @@ service pritunl start
 
 SETUP_KEY=`pritunl setup-key`
 
-while ! openssl s_client -showcerts -connect localhost:443 > /tmp/cacert.pem
+while ! curl -k -H 'Content-Type: application/json' -X PUT -d "{\"setup_key\":\"${SETUP_KEY}\", \"mongodb_uri\":\"mongodb://localhost:27017/pritunl\"}" "https://localhost/setup/mongodb"
 do
     ((c++)) && ((c==30)) && break
     sleep 1
 done
-
-curl --cacert /tmp/cacert.pem -H 'Content-Type: application/json' -X PUT -d "{\"setup_key\":\"${SETUP_KEY}\", \"mongodb_uri\":\"mongodb://localhost:27017/pritunl\"}" "https://localhost/setup/mongodb"
