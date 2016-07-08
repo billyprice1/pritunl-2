@@ -1,0 +1,39 @@
+{
+	"name": "fodorxyz/pritunl",
+	"installpath": "/tmp/pritunl/",
+	"provisioner": "fodor/provisioner",
+	"text": {
+		"complete": "Woo!"
+	},
+        "links": [
+                {
+                        "title": "Readme",
+                        "url" : "https://medium.com/pritunl-tutorials/pritunl-tutorial-ed50a5d2a4eb#e91e"
+                },
+                {
+                        "title": "Setup",
+                        "url": "https://{{DOMAIN}}/"
+                }
+        ],
+	"size": {
+		"suggested": "512mb"
+	},
+	"distro": "ubuntu-14-04-x64",
+	"description": "Enterprise VPN server https://pritunl.com/",
+	"keywords": ["fodor", "vpn", "enterprise", "server", "pritunl"],
+	"homepage": "https://pritunl.com",
+	"inputs": [
+    {
+        "title": "Admin Username",
+        "name": "admin_username",
+        "placeholder": "admin",
+        "type": "string"
+    },
+    {
+        "title": "Admin Password",
+        "name": "admin_password",
+        "placeholder": "",
+        "type": "password"
+    }
+  ]
+}
