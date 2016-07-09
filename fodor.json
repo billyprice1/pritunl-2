@@ -21,5 +21,6 @@
 	"distro": "ubuntu-14-04-x64",
 	"description": "Enterprise VPN server https://pritunl.com/",
 	"keywords": ["fodor", "vpn", "enterprise", "server", "pritunl"],
-	"homepage": "https://pritunl.com"
+	"homepage": "https://pritunl.com",
+	"image": "https://pritunl.com/img/screenshot3.png"
 }
